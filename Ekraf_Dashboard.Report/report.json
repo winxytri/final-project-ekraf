@@ -1,0 +1,275 @@
+{
+  "id": 0,
+  "resourcePackages": [],
+  "sections": [
+    {
+      "id": 0,
+      "name": "Section_Overview_Ekraf",
+      "displayName": "1. Overview Ekosistem Ekraf",
+      "filters": "[]",
+      "ordinal": 0,
+      "width": 1280.0,
+      "height": 720.0,
+      "config": "{\"name\": \"Section_Overview_Ekraf\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 0, \"width\": 1280, \"height\": 720}}]}",
+      "visualContainers": [
+        {
+          "x": 20.0,
+          "y": 15.0,
+          "z": 1,
+          "width": 840.0,
+          "height": 55.0,
+          "config": "{\"name\": \"HeaderTextBoxP1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 15, \"width\": 840, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"EKOSISTEM & AKSELERASI DIGITAL UMKM EKONOMI KREATIF  \", \"textStyle\": {\"fontFamily\": \"Segoe UI Bold\", \"fontSize\": \"15pt\", \"color\": \"#00D8D6\"}}, {\"value\": \"\\nGoogle Career Certificates x Kemenparekraf RI | Data Analytics Track 2026\", \"textStyle\": {\"fontFamily\": \"Segoe UI\", \"fontSize\": \"10pt\", \"color\": \"#94A3B8\"}}]}]}}]}}}"
+        },
+        {
+          "x": 870.0,
+          "y": 15.0,
+          "z": 2,
+          "width": 190.0,
+          "height": 55.0,
+          "config": "{\"name\": \"Slicer_Wilayah_Pulau_2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 870, \"y\": 15, \"width\": 190, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Data_Responden_Hub.Wilayah_Pulau\"}]}}}"
+        },
+        {
+          "x": 1070.0,
+          "y": 15.0,
+          "z": 3,
+          "width": 190.0,
+          "height": 55.0,
+          "config": "{\"name\": \"Slicer_Status_Pengguna_3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1070, \"y\": 15, \"width\": 190, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Data_Responden_Hub.Status_Pengguna\"}]}}}"
+        },
+        {
+          "x": 20.0,
+          "y": 80.0,
+          "z": 4,
+          "width": 235.0,
+          "height": 95.0,
+          "config": "{\"name\": \"Card_Total_Pengguna_Terdaftar_4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 80, \"width\": 235, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Data_Responden_Hub.Total_Pengguna_Terdaftar\"}]}}}",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"d\", \"Entity\": \"Data_Responden_Hub\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Total_Pengguna_Terdaftar\"}, \"Name\": \"Data_Responden_Hub.Total_Pengguna_Terdaftar\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 270.0,
+          "y": 80.0,
+          "z": 5,
+          "width": 235.0,
+          "height": 95.0,
+          "config": "{\"name\": \"Card_Persen_Pemilik_Usaha_5\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 270, \"y\": 80, \"width\": 235, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Data_Responden_Hub.Persen_Pemilik_Usaha\"}]}}}",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"d\", \"Entity\": \"Data_Responden_Hub\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Persen_Pemilik_Usaha\"}, \"Name\": \"Data_Responden_Hub.Persen_Pemilik_Usaha\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 520.0,
+          "y": 80.0,
+          "z": 6,
+          "width": 235.0,
+          "height": 95.0,
+          "config": "{\"name\": \"Card_Persen_Konsentrasi_Jawa_6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 520, \"y\": 80, \"width\": 235, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Data_Responden_Hub.Persen_Konsentrasi_Jawa\"}]}}}",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"d\", \"Entity\": \"Data_Responden_Hub\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Persen_Konsentrasi_Jawa\"}, \"Name\": \"Data_Responden_Hub.Persen_Konsentrasi_Jawa\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 770.0,
+          "y": 80.0,
+          "z": 7,
+          "width": 235.0,
+          "height": 95.0,
+          "config": "{\"name\": \"Card_Persen_Adopsi_Digital_7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 770, \"y\": 80, \"width\": 235, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Data_Responden_Hub.Persen_Adopsi_Digital\"}]}}}",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"d\", \"Entity\": \"Data_Responden_Hub\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Persen_Adopsi_Digital\"}, \"Name\": \"Data_Responden_Hub.Persen_Adopsi_Digital\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 1020.0,
+          "y": 80.0,
+          "z": 8,
+          "width": 240.0,
+          "height": 95.0,
+          "config": "{\"name\": \"Card_Persen_Kenaikan_Pendapatan_8\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1020, \"y\": 80, \"width\": 240, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Data_Responden_Hub.Persen_Kenaikan_Pendapatan\"}]}}}",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"d\", \"Entity\": \"Data_Responden_Hub\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Persen_Kenaikan_Pendapatan\"}, \"Name\": \"Data_Responden_Hub.Persen_Kenaikan_Pendapatan\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20.0,
+          "y": 190.0,
+          "z": 9,
+          "width": 360.0,
+          "height": 340.0,
+          "config": "{\"name\": \"DonutStatusPelaku\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 190, \"width\": 360, \"height\": 340}}], \"singleVisual\": {\"visualType\": \"donutChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Data_Responden_Hub.Status_Pengguna\"}], \"Y\": [{\"queryRef\": \"Data_Responden_Hub.Total_Pengguna_Terdaftar\"}]}}}"
+        },
+        {
+          "x": 395.0,
+          "y": 190.0,
+          "z": 10,
+          "width": 475.0,
+          "height": 340.0,
+          "config": "{\"name\": \"BarSubsektor\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 395, \"y\": 190, \"width\": 475, \"height\": 340}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Subsektor_Ekraf.Subsektor\"}], \"Y\": [{\"queryRef\": \"Data_Responden_Hub.Total_Pengguna_Terdaftar\"}]}}}"
+        },
+        {
+          "x": 885.0,
+          "y": 190.0,
+          "z": 11,
+          "width": 375.0,
+          "height": 340.0,
+          "config": "{\"name\": \"BarProvinsi\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 885, \"y\": 190, \"width\": 375, \"height\": 340}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Provinsi_Ekraf.Provinsi\"}], \"Y\": [{\"queryRef\": \"Data_Responden_Hub.Total_Pengguna_Terdaftar\"}]}}}"
+        },
+        {
+          "x": 20.0,
+          "y": 545.0,
+          "z": 12,
+          "width": 1240.0,
+          "height": 160.0,
+          "config": "{\"name\": \"InsightsTextBox\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 545, \"width\": 1240, \"height\": 160}}], \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"RINGKASAN 5 KEY INSIGHTS & REKOMENDASI STRATEGIS EKRAF:\\n\", \"textStyle\": {\"fontFamily\": \"Segoe UI Bold\", \"fontSize\": \"11pt\", \"color\": \"#FF6B4A\"}}]}, {\"textRuns\": [{\"value\": \"1. Hegemoni Big 3: \", \"textStyle\": {\"fontFamily\": \"Segoe UI Bold\", \"fontSize\": \"9pt\", \"color\": \"#00D8D6\"}}, {\"value\": \"Kuliner (23.9%), Fesyen (13.6%), Kriya (9.3%) kuasai 46.8% pelaku di Ekraf Hub dan >74% PDB Ekraf nasional.\\n\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#CBD5E1\"}}, {\"value\": \"2. Kesenjangan Wilayah: \", \"textStyle\": {\"fontFamily\": \"Segoe UI Bold\", \"fontSize\": \"9pt\", \"color\": \"#00D8D6\"}}, {\"value\": \"69.3% pelaku usaha terpusat di Pulau Jawa (Jabar 2.232, Jatim 1.380, DKI 1.183 pelaku) akibat disparitas kesiapan digital.\\n\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#CBD5E1\"}}, {\"value\": \"3. Kausalitas Digital: \", \"textStyle\": {\"fontFamily\": \"Segoe UI Bold\", \"fontSize\": \"9pt\", \"color\": \"#00D8D6\"}}, {\"value\": \"80.2% pelaku UMKM 'Full Digital' mencatatkan kenaikan omzet (42% naik >30%), berbanding hanya 25% pada kelompok offline.\\n\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#CBD5E1\"}}, {\"value\": \"4. Akses Modal Terbatas: \", \"textStyle\": {\"fontFamily\": \"Segoe UI Bold\", \"fontSize\": \"9pt\", \"color\": \"#00D8D6\"}}, {\"value\": \"58% masih memakai modal pribadi; penetrasi fintech produktif (12%) dan KUR bank (22%) perlu didorong dengan credit scoring digital.\", \"textStyle\": {\"fontSize\": \"9pt\", \"color\": \"#CBD5E1\"}}]}]}}]}}}"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Section_Digital_Fintech",
+      "displayName": "2. Digitalisasi & Permodalan",
+      "filters": "[]",
+      "ordinal": 1,
+      "width": 1280.0,
+      "height": 720.0,
+      "config": "{\"name\": \"Section_Digital_Fintech\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 0, \"width\": 1280, \"height\": 720}}]}",
+      "visualContainers": [
+        {
+          "x": 20.0,
+          "y": 15.0,
+          "z": 1,
+          "width": 840.0,
+          "height": 55.0,
+          "config": "{\"name\": \"HeaderTextBoxP2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 15, \"width\": 840, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"ANALISIS TRANSFORMASI DIGITAL & INKLUSI FINTECH UMKM  \", \"textStyle\": {\"fontFamily\": \"Segoe UI Bold\", \"fontSize\": \"15pt\", \"color\": \"#10B981\"}}, {\"value\": \"\\nDampak Penerapan Teknologi Kasir POS, E-Commerce, dan Sumber Permodalan\", \"textStyle\": {\"fontFamily\": \"Segoe UI\", \"fontSize\": \"10pt\", \"color\": \"#94A3B8\"}}]}]}}]}}}"
+        },
+        {
+          "x": 870.0,
+          "y": 15.0,
+          "z": 2,
+          "width": 190.0,
+          "height": 55.0,
+          "config": "{\"name\": \"Slicer_Tingkat_Digitalisasi_2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 870, \"y\": 15, \"width\": 190, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Data_Responden_Hub.Tingkat_Digitalisasi\"}]}}}"
+        },
+        {
+          "x": 1070.0,
+          "y": 15.0,
+          "z": 3,
+          "width": 190.0,
+          "height": 55.0,
+          "config": "{\"name\": \"Slicer_Skala_Usaha_3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1070, \"y\": 15, \"width\": 190, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Data_Responden_Hub.Skala_Usaha\"}]}}}"
+        },
+        {
+          "x": 20.0,
+          "y": 80.0,
+          "z": 4,
+          "width": 295.0,
+          "height": 95.0,
+          "config": "{\"name\": \"Card_Pelaku_Full_Digital_4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 80, \"width\": 295, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Data_Responden_Hub.Pelaku_Full_Digital\"}]}}}",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"d\", \"Entity\": \"Data_Responden_Hub\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Pelaku_Full_Digital\"}, \"Name\": \"Data_Responden_Hub.Pelaku_Full_Digital\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 330.0,
+          "y": 80.0,
+          "z": 5,
+          "width": 295.0,
+          "height": 95.0,
+          "config": "{\"name\": \"Card_Persen_Penetrasi_Fintech_5\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 330, \"y\": 80, \"width\": 295, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Data_Responden_Hub.Persen_Penetrasi_Fintech\"}]}}}",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"d\", \"Entity\": \"Data_Responden_Hub\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Persen_Penetrasi_Fintech\"}, \"Name\": \"Data_Responden_Hub.Persen_Penetrasi_Fintech\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 640.0,
+          "y": 80.0,
+          "z": 6,
+          "width": 295.0,
+          "height": 95.0,
+          "config": "{\"name\": \"Card_Rata_Rata_Omzet_Bulanan_Juta_6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 640, \"y\": 80, \"width\": 295, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Data_Responden_Hub.Rata_Rata_Omzet_Bulanan_Juta\"}]}}}",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"d\", \"Entity\": \"Data_Responden_Hub\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Rata_Rata_Omzet_Bulanan_Juta\"}, \"Name\": \"Data_Responden_Hub.Rata_Rata_Omzet_Bulanan_Juta\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 950.0,
+          "y": 80.0,
+          "z": 7,
+          "width": 310.0,
+          "height": 95.0,
+          "config": "{\"name\": \"Card_Total_Tenaga_Kerja_Terserap_7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 950, \"y\": 80, \"width\": 310, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Data_Responden_Hub.Total_Tenaga_Kerja_Terserap\"}]}}}",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"d\", \"Entity\": \"Data_Responden_Hub\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"d\"}}, \"Property\": \"Total_Tenaga_Kerja_Terserap\"}, \"Name\": \"Data_Responden_Hub.Total_Tenaga_Kerja_Terserap\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20.0,
+          "y": 190.0,
+          "z": 8,
+          "width": 610.0,
+          "height": 500.0,
+          "config": "{\"name\": \"StackedChartDampakDigital\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 190, \"width\": 610, \"height\": 500}}], \"singleVisual\": {\"visualType\": \"hundredPercentStackedColumnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Data_Responden_Hub.Tingkat_Digitalisasi\"}], \"Series\": [{\"queryRef\": \"Data_Responden_Hub.Dampak_Digital_Thdp_Omzet\"}], \"Y\": [{\"queryRef\": \"Data_Responden_Hub.Total_Pengguna_Terdaftar\"}]}}}"
+        },
+        {
+          "x": 650.0,
+          "y": 190.0,
+          "z": 9,
+          "width": 610.0,
+          "height": 500.0,
+          "config": "{\"name\": \"BarSumberPermodalan\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 650, \"y\": 190, \"width\": 610, \"height\": 500}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Data_Responden_Hub.Sumber_Permodalan_Utama\"}], \"Y\": [{\"queryRef\": \"Data_Responden_Hub.Total_Pengguna_Terdaftar\"}]}}}"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Section_Subsektors_Ekspor",
+      "displayName": "3. Eksplorasi 17 Subsektor",
+      "filters": "[]",
+      "ordinal": 2,
+      "width": 1280.0,
+      "height": 720.0,
+      "config": "{\"name\": \"Section_Subsektors_Ekspor\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 0, \"y\": 0, \"width\": 1280, \"height\": 720}}]}",
+      "visualContainers": [
+        {
+          "x": 20.0,
+          "y": 15.0,
+          "z": 1,
+          "width": 840.0,
+          "height": 55.0,
+          "config": "{\"name\": \"HeaderTextBoxP3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 15, \"width\": 840, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"EKSPLORASI DATA 17 SUBSEKTOR EKONOMI KREATIF  \", \"textStyle\": {\"fontFamily\": \"Segoe UI Bold\", \"fontSize\": \"15pt\", \"color\": \"#A855F7\"}}, {\"value\": \"\\nStatistik Komparatif PDB, Nilai Devisa Ekspor, dan Pertumbuhan Tahunan YoY\", \"textStyle\": {\"fontFamily\": \"Segoe UI\", \"fontSize\": \"10pt\", \"color\": \"#94A3B8\"}}]}]}}]}}}"
+        },
+        {
+          "x": 870.0,
+          "y": 15.0,
+          "z": 2,
+          "width": 390.0,
+          "height": 55.0,
+          "config": "{\"name\": \"Slicer_Kategori_Klaster_2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 870, \"y\": 15, \"width\": 390, \"height\": 55}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Subsektor_Ekraf.Kategori_Klaster\"}]}}}"
+        },
+        {
+          "x": 20.0,
+          "y": 80.0,
+          "z": 3,
+          "width": 395.0,
+          "height": 95.0,
+          "config": "{\"name\": \"CardTotalPDB\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 80, \"width\": 395, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Subsektor_Ekraf.Total_PDB_Ekraf_Triliun\"}]}}}"
+        },
+        {
+          "x": 435.0,
+          "y": 80.0,
+          "z": 4,
+          "width": 395.0,
+          "height": 95.0,
+          "config": "{\"name\": \"CardTotalEkspor\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 435, \"y\": 80, \"width\": 395, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Subsektor_Ekraf.Total_Ekspor_Ekraf_Miliar_USD\"}]}}}"
+        },
+        {
+          "x": 850.0,
+          "y": 80.0,
+          "z": 5,
+          "width": 410.0,
+          "height": 95.0,
+          "config": "{\"name\": \"CardRataGrowth\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 850, \"y\": 80, \"width\": 410, \"height\": 95}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Fields\": [{\"queryRef\": \"Subsektor_Ekraf.Rata_Pertumbuhan_Subsektor_YoY\"}]}}}"
+        },
+        {
+          "x": 20.0,
+          "y": 190.0,
+          "z": 6,
+          "width": 780.0,
+          "height": 500.0,
+          "config": "{\"name\": \"TableSubsektorFull\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 190, \"width\": 780, \"height\": 500}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"Subsektor_Ekraf.Subsektor\"}, {\"queryRef\": \"Subsektor_Ekraf.Kategori_Klaster\"}, {\"queryRef\": \"Subsektor_Ekraf.Pelaku_Sampel_Hub\"}, {\"queryRef\": \"Subsektor_Ekraf.PDB_Ekraf_Triliun_IDR\"}, {\"queryRef\": \"Subsektor_Ekraf.Nilai_Ekspor_Juta_USD\"}, {\"queryRef\": \"Subsektor_Ekraf.Tingkat_Adopsi_Digital_Persen\"}, {\"queryRef\": \"Subsektor_Ekraf.Pertumbuhan_Omzet_YoY_Persen\"}]}}}"
+        },
+        {
+          "x": 820.0,
+          "y": 190.0,
+          "z": 7,
+          "width": 440.0,
+          "height": 500.0,
+          "config": "{\"name\": \"BarEksporSubsektor\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 820, \"y\": 190, \"width\": 440, \"height\": 500}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Subsektor_Ekraf.Subsektor\"}], \"Y\": [{\"queryRef\": \"Subsektor_Ekraf.Nilai_Ekspor_Juta_USD\"}]}}}"
+        }
+      ]
+    }
+  ]
+}

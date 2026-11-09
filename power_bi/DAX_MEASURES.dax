@@ -1,0 +1,117 @@
+// ==============================================================================
+// KOLEKSI RUMUS DAX LENGKAP - FINAL PROJECT DATA ANALYTICS EKRAF
+// Tema: "Akselerasi Digital & Kontribusi UMKM Ekonomi Kreatif terhadap Pertumbuhan Ekonomi"
+// ==============================================================================
+
+// ------------------------------------------------------------------------------
+// 1. METRIK UTAMA PENGGUNA & STATUS (EKRAF HUB)
+// ------------------------------------------------------------------------------
+
+Total_Pengguna_Terdaftar = 
+COUNTROWS(Data_Responden_Hub)
+
+Total_Pemilik_Usaha = 
+CALCULATE(
+    COUNTROWS(Data_Responden_Hub),
+    Data_Responden_Hub[Status_Pengguna] = "Pemilik Usaha"
+)
+
+Persen_Pemilik_Usaha = 
+DIVIDE([Total_Pemilik_Usaha], [Total_Pengguna_Terdaftar], 0)
+
+Total_Pekerja_Kreatif = 
+CALCULATE(
+    COUNTROWS(Data_Responden_Hub),
+    Data_Responden_Hub[Status_Pengguna] = "Pekerja Kreatif"
+)
+
+Total_Asosiasi = 
+CALCULATE(
+    COUNTROWS(Data_Responden_Hub),
+    Data_Responden_Hub[Status_Pengguna] = "Asosiasi"
+)
+
+// ------------------------------------------------------------------------------
+// 2. METRIK DIGITALISASI & FINTECH INCLUSION
+// ------------------------------------------------------------------------------
+
+Pelaku_Full_Digital = 
+CALCULATE(
+    COUNTROWS(Data_Responden_Hub),
+    Data_Responden_Hub[Tingkat_Digitalisasi] = "Full Digital (Marketplace & POS)"
+)
+
+Persen_Adopsi_Digital = 
+DIVIDE([Pelaku_Full_Digital], [Total_Pengguna_Terdaftar], 0)
+
+Pelaku_Adopsi_Fintech = 
+CALCULATE(
+    COUNTROWS(Data_Responden_Hub),
+    Data_Responden_Hub[Menggunakan_Fintech_Digital] = "Ya"
+)
+
+Persen_Penetrasi_Fintech = 
+DIVIDE([Pelaku_Adopsi_Fintech], [Total_Pengguna_Terdaftar], 0)
+
+Pelaku_Kenaikan_Pendapatan = 
+CALCULATE(
+    COUNTROWS(Data_Responden_Hub),
+    Data_Responden_Hub[Dampak_Digital_Thdp_Omzet] IN {"Meningkat >30%", "Meningkat 10-30%"}
+)
+
+Persen_Kenaikan_Pendapatan = 
+DIVIDE([Pelaku_Kenaikan_Pendapatan], [Total_Pengguna_Terdaftar], 0)
+
+// ------------------------------------------------------------------------------
+// 3. METRIK PERFORMA FINANSIAL & DAMPAK EKONOMI
+// ------------------------------------------------------------------------------
+
+Rata_Rata_Omzet_Bulanan_Juta = 
+AVERAGE(Data_Responden_Hub[Omzet_Bulanan_Juta_IDR])
+
+Total_Estimasi_Omzet_Tahunan_Miliar = 
+SUM(Data_Responden_Hub[Omzet_Bulanan_Juta_IDR]) * 12 / 1000
+
+Total_Tenaga_Kerja_Terserap = 
+SUM(Data_Responden_Hub[Jumlah_Tenaga_Kerja])
+
+Rata_Rata_Tenaga_Kerja_Per_Unit = 
+AVERAGE(Data_Responden_Hub[Jumlah_Tenaga_Kerja])
+
+// ------------------------------------------------------------------------------
+// 4. METRIK SEBARAN REGIONAL (JAWA VS LUAR JAWA)
+// ------------------------------------------------------------------------------
+
+Pelaku_Wilayah_Jawa = 
+CALCULATE(
+    COUNTROWS(Data_Responden_Hub),
+    Data_Responden_Hub[Wilayah_Pulau] = "Jawa"
+)
+
+Persen_Konsentrasi_Jawa = 
+DIVIDE([Pelaku_Wilayah_Jawa], [Total_Pengguna_Terdaftar], 0)
+
+Pelaku_Wilayah_Luar_Jawa = 
+CALCULATE(
+    COUNTROWS(Data_Responden_Hub),
+    Data_Responden_Hub[Wilayah_Pulau] <> "Jawa"
+)
+
+Persen_Wilayah_Luar_Jawa = 
+DIVIDE([Pelaku_Wilayah_Luar_Jawa], [Total_Pengguna_Terdaftar], 0)
+
+// ------------------------------------------------------------------------------
+// 5. METRIK TABEL SUBSEKTOR & PROVINSI
+// ------------------------------------------------------------------------------
+
+Total_PDB_Ekraf_Nasional_Triliun = 
+SUM(Subsektor_Ekraf[PDB_Ekraf_Triliun_IDR])
+
+Total_Ekspor_Ekraf_Miliar_USD = 
+SUM(Subsektor_Ekraf[Nilai_Ekspor_Juta_USD]) / 1000
+
+Rata_Rata_Daya_Saing_Digital_Daerah = 
+AVERAGE(Provinsi_Ekraf[Indeks_Daya_Saing_Digital (EV-DCI)])
+
+Total_Pembiayaan_Daerah_Triliun = 
+SUM(Provinsi_Ekraf[Penyaluran_Pembiayaan_Miliar_IDR]) / 1000

@@ -1,0 +1,82 @@
+{
+  "name": "Ekraf Katadata Editorial Light - GCC Edition",
+  "dataColors": [
+    "#FF5722",
+    "#0284C7",
+    "#7C3AED",
+    "#059669",
+    "#D97706",
+    "#2563EB",
+    "#DB2777",
+    "#0D9488",
+    "#E11D48",
+    "#4F46E5"
+  ],
+  "background": "#F8FAFC",
+  "foreground": "#0F172A",
+  "tableAccent": "#FF5722",
+  "good": "#059669",
+  "neutral": "#D97706",
+  "bad": "#E11D48",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#E2E8F0" } },
+            "radius": 12
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#64748B" } },
+            "position": "Outer",
+            "transparency": 85,
+            "preset": "BottomRight"
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontColor": { "solid": { "color": "#0F172A" } },
+            "fontSize": 13,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "labels": [
+          {
+            "fontColor": { "solid": { "color": "#475569" } },
+            "fontFamily": "Segoe UI"
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [
+          {
+            "fontSize": 26,
+            "fontFamily": "Segoe UI Bold",
+            "fontColor": { "solid": { "color": "#FF5722" } }
+          }
+        ],
+        "categoryLabels": [
+          {
+            "fontSize": 10,
+            "fontFamily": "Segoe UI Semibold",
+            "fontColor": { "solid": { "color": "#64748B" } }
+          }
+        ]
+      }
+    }
+  }
+}
