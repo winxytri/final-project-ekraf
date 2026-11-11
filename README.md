@@ -81,7 +81,3 @@ d:\final-project-ekraf\
 
 ---
 
-## 📤 Informasi Pengumpulan Tugas
-- **Link Formulir**: [https://ekr.af/finalprojectda](https://ekr.af/finalprojectda)
-- **Deadline**: 11 November 2026, Pukul 23.59 WIB
-- **Berkas yang Diunggah**: File gambar `output\infografis_ekraf_final_project.png` atau `output\infografis_ekraf_portrait.png`.
